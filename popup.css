@@ -1,0 +1,17 @@
+body { margin: 0; width: 560px; max-height: 600px; font: 13px/1.45 system-ui, sans-serif; color: #1a1a1a; background: #fff; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 12px; border-bottom: 1px solid #ddd; background: #f6f6f6; position: sticky; top: 0; }
+#status { font-weight: 600; }
+.actions { display: flex; gap: 6px; }
+button { font: inherit; padding: 3px 10px; border: 1px solid #bbb; border-radius: 4px; background: #fff; cursor: pointer; }
+button:hover { background: #eee; }
+pre { margin: 0; padding: 12px; white-space: pre-wrap; word-wrap: break-word; font: inherit; max-height: 520px; overflow: auto; }
+#note { margin: 0; padding: 8px 12px; color: #7a4a00; background: #fff6e0; border-top: 1px solid #f0d9a0; }
+.error { color: #a00000; }
+@media (prefers-color-scheme: dark) {
+  body { color: #e8e8e8; background: #1f1f1f; }
+  header { background: #2a2a2a; border-color: #444; }
+  button { background: #333; border-color: #555; color: #e8e8e8; }
+  button:hover { background: #444; }
+  #note { color: #ffd27a; background: #3a2e12; border-color: #5a4a20; }
+  .error { color: #ff8a8a; }
+}

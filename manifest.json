@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Translate",
+  "description": "Translate the open email with DeepL (free API).",
+  "version": "1.0.0",
+  "author": "DynamicVibe Productions",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "translate@dynamicvibe.net",
+      "strict_min_version": "137.0"
+    }
+  },
+  "icons": { "32": "icons/translate.svg", "64": "icons/translate.svg" },
+  "permissions": [
+    "messagesRead",
+    "storage",
+    "https://api-free.deepl.com/*"
+  ],
+  "message_display_action": {
+    "default_title": "Translate this email",
+    "default_label": "Translate",
+    "default_icon": "icons/translate.svg",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}

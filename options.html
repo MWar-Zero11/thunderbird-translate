@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font: 13px/1.5 system-ui, sans-serif; margin: 0; padding: 12px; min-width: 420px; }
+    label { display: block; font-weight: 600; margin-top: 12px; }
+    input, select { font: inherit; width: 100%; box-sizing: border-box; padding: 6px 8px; margin-top: 4px; }
+    p { margin: 6px 0 0; color: #666; }
+    #saved { color: #0a7a2a; font-weight: 600; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #1f1f1f; }
+      p { color: #aaa; }
+      input, select { background: #2a2a2a; color: #e8e8e8; border: 1px solid #555; }
+      #saved { color: #7ad48f; }
+    }
+  </style>
+</head>
+<body>
+  <label for="apiKey">DeepL API key</label>
+  <input id="apiKey" type="password" autocomplete="off" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:fx">
+  <p>Free key from <a href="https://www.deepl.com/pro-api" target="_blank">deepl.com/pro-api</a>, under API Keys. Free keys end in <code>:fx</code>.</p>
+  <label for="targetLang">Translate into</label>
+  <select id="targetLang"></select>
+  <p id="saved" hidden>Saved</p>
+  <script src="core.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
