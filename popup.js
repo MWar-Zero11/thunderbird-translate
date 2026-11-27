@@ -49,7 +49,7 @@ async function run() {
 
   const key = core.cacheKey(msg.headerMessageId, targetLang);
   const cached = (await messenger.storage.local.get(key))[key];
-  if (cached) return show(`Translated from ${cached.from} (cached)`, cached.text);
+  if (cached) return show(`Translated from ${cached.from || "?"} (cached)`, cached.text);
 
   const raw = await messageText(msg.id);
   if (!raw.trim()) return show("Nothing to translate", "This email has no readable text.", { error: true });
